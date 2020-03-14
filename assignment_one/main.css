@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: aqua;
+}
+
+code {
+    font-family: monospace;
+    color: red;
+}
+
+.different-colour {
+    color: green;
+}
+
+li:not(:first-of-type) {
+    background-color: black;
+    color: white;
+}
+
+/*Other options*/
+/*li + li {*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*}*/
+
+/*li ~ li {*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*}*/
+
+
+/*Direct child */
+ol > li {
+    background-color: black;
+    color: white;
+}
+
+/*Descendent*/
+/*ol li {*/
+/*    background-color: black;*/
+/*    color: white; */
+/*}*/
