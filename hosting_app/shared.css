@@ -31,7 +31,7 @@ main {
     padding: .5rem 1rem;
     top: 0;
     position: fixed;
-    z-index: 1; /* needed so that the recommended package does not go over the header */
+    z-index: 60; /* needed so that the recommended package does not go over the header */
     display: flex;
     align-items: center;
     justify-content: space-between;
