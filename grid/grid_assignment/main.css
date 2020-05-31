@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    margin: 20px;
+    height: 100%;
+    grid-template-columns: [col-1-start] 1fr [col-2-start] 3fr [col-2-end];
+    grid-template-rows: 4.5rem auto 4.5rem;
+}
+
+header {
+    background: blue;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+section {
+    background: red;
+    color: white;
+}
+
+aside {
+    background: green;
+    color: white;
+}
+
+footer {
+    background: purple;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/*MY SOLUTION */
+/*.container {*/
+/*    margin: 1rem;*/
+/*    display: grid;*/
+/*    grid-template-columns: 200px 20px auto;*/
+/*    grid-template-rows: 100px 20px 400px 20px 90px;*/
+/*    height: 600px;*/
+/*}*/
+
+/*header {*/
+/*    background: #3CBDE8;*/
+/*    grid-column-start: 1;*/
+/*    grid-column-end: 6;*/
+/*}*/
+
+/*aside {*/
+/*    background: #2C9DD4;*/
+/*    grid-column-start: 1;*/
+/*    grid-column-end: 2;*/
+/*    grid-row-start: 3;*/
+/*    grid-row-end: 4;*/
+/*}*/
+
+/*section {*/
+/*    background: #2A7DB5;*/
+/*    grid-column-start: 3;*/
+/*    grid-column-end: 6;*/
+/*    grid-row-start: 3;*/
+/*    grid-row-end: 4;*/
+/*}*/
+
+/*footer {*/
+/*    background: #7C899B;*/
+/*    grid-column-start: 1;*/
+/*    grid-column-end: 6;*/
+/*    grid-row-start: 5;*/
+/*    grid-row-end: 6;*/
+/*}*/
