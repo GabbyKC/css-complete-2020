@@ -169,7 +169,7 @@
     opacity: 0;
     transform: translateY(-3rem);
     /*transition: opacity 0.2s ease-out 1s, transform 500ms ease-out 1s;*/
-    transition: opacity 0.2s ease-out, transform 500ms ease-out;
+    transition: opacity 0.2s ease-out, transform 500ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
     z-index: 200;
     top: 20%;
     left: 30%;
