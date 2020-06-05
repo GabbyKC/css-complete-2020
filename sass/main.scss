@@ -24,14 +24,14 @@ body {
     wrap: nowrap;
   }
   align-items: center;
-  padding: 3rem 0;
+  padding: $size-default * 3 0;
   box-sizing: border-box;
 }
 
 .sass-introduction {
   border: $border-default;
   background: lighten(map_get($colors, main), 72%);
-  padding: 2rem;
+  padding: $size-default * 2;
   text-align: center;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
@@ -47,7 +47,7 @@ body {
   background: lighten(map_get($colors, main), 72%);
   padding: $size-default;
   text-align: center;
-  margin: 2rem 0;
+  margin: $size-default * 2 0;
   width: 90%;
   box-sizing: border-box;
 }
@@ -95,7 +95,7 @@ body {
 html {
   font-size: 125%;
 }
-  
+
 .sass-introduction,
 .sass-details {
   width: 30rem;
