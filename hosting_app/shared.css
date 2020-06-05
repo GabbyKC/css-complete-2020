@@ -16,13 +16,19 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    display: grid;
-    grid-template-rows: 3.5rem auto fit-content(8rem);
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-    /*padding-top: 3.5rem;*/
-    height: 100%;
+    padding-top: 3.5rem;
+}
+
+@supports (display: grid) {
+    body {
+        display: grid;
+        grid-template-rows: 3.5rem auto fit-content(8rem);
+        grid-template-areas: "header"
+                            "main"
+                            "footer";
+        padding-top: 0;
+        height: 100%;
+    }
 }
 
 main {
@@ -80,7 +86,7 @@ main {
 }
 
 .main-header__brand {
-    color: var(--dark-gren,#0e4f1f);
+    color: var(--dark-gren, #0e4f1f);
     text-decoration: none;
     font-weight: bold;
     /*height: 1.375rem;*/
@@ -122,8 +128,8 @@ main {
 }
 
 .main-nav__item--cta {
-   animation: wiggle 400ms 3s 8 ease-out none;
-   /*animation: wiggle 200ms 3s 8 alternate ;*/
+    animation: wiggle 400ms 3s 8 ease-out none;
+    /*animation: wiggle 200ms 3s 8 alternate ;*/
 }
 
 .main-nav__item--cta a,
@@ -264,13 +270,13 @@ main {
 
 @keyframes wiggle {
     0% {
-       transform: rotateZ(0);
+        transform: rotateZ(0);
     }
     50% {
         transform: rotateZ(-10deg);
     }
-     100% {
-         transform: rotateZ(10deg);
-     }
+    100% {
+        transform: rotateZ(10deg);
+    }
 }
 
