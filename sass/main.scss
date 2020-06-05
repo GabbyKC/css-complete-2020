@@ -28,18 +28,22 @@ body {
   box-sizing: border-box;
 }
 
-.sass-introduction {
+.sass-section {
   border: $border-default;
   background: lighten(map_get($colors, main), 72%);
   padding: $size-default * 2;
   text-align: center;
-  box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
   box-sizing: border-box;
 
   @media (min-width: 40rem) {
     width: 30rem;
   }
+}
+
+.sass-introduction {
+  @extend .sass-section;
+  box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
 }
 
 .sass-introduction p {
@@ -47,17 +51,8 @@ body {
 }
 
 .sass-details {
-  border: $border-default;
-  background: lighten(map_get($colors, main), 72%);
-  padding: $size-default;
-  text-align: center;
+  @extend .sass-section;
   margin: $size-default * 2 0;
-  width: 90%;
-  box-sizing: border-box;
-
-  @media (min-width: 40rem) {
-    width: 30rem;
-  }
 }
 
 .section-header {
